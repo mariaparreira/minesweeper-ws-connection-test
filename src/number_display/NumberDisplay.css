@@ -1,0 +1,28 @@
+/* NUMBER DISPLAY STYLING */
+
+.number-display {
+    width: 60px;
+    height: 38px;
+    font-size: 20px;
+    color: white;
+    background-color: #006172;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .number-display {
+        width: 70px;
+        height: 43px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .number-display {
+        width: 80px;
+        height: 48px;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,49 @@
+.board {
+    font-size: 14px;
+    font-weight: bolder;
+    border-width: 4px;
+    border-style: solid;
+    border-right-color: #004551;
+    border-bottom-color: #004551;
+    border-left-color: #00687b;
+    border-top-color: #00687b;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board:active {
+    border-right-color: #00687b;
+    border-bottom-color: #00687b;
+    border-left-color: #004551;
+    border-top-color: #004551;
+}
+
+.board.revealed {
+    border-color: #004551;
+    border-width: 1px;
+    cursor: default;
+}
+
+.adjacent-1 { color: #76c4ff; }
+.adjacent-2 { color: #7dff81; }
+.adjacent-3 { color: #ffda6d; }
+.adjacent-4 { color: #ff7f57; }
+.adjacent-5 { color: #e23eff; }
+.adjacent-6 { color: #ff9bbc; }
+.adjacent-7 { color: #6a3f2f; }
+.adjacent-8 { color: #1d1d1d; }
+
+@media (min-width: 768px) {
+    .board {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .board {
+        font-size: 26px;
+    }
+}
